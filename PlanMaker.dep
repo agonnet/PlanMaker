@@ -1,0 +1,299 @@
+# Microsoft Developer Studio Generated Dependency File, included by Plan.mak
+
+.\Block2Dlg.cpp : \
+	".\Block2Dlg.h"\
+	".\Plan.h"\
+	".\PrchAvailDlg2.h"\
+	
+
+.\BlockDlg.cpp : \
+	".\BlockDlg.h"\
+	".\CannotBlockDlg.h"\
+	".\CannotUnblockDlg.h"\
+	".\Plan.h"\
+	".\PlanDoc.h"\
+	
+
+.\CannotBlockDlg.cpp : \
+	".\CannotBlockDlg.h"\
+	".\Plan.h"\
+	
+
+.\CannotUnblockDlg.cpp : \
+	".\CannotUnblockDlg.h"\
+	".\Plan.h"\
+	
+
+.\ChooseEditDlg.cpp : \
+	".\ChooseEditDlg.h"\
+	".\Plan.h"\
+	
+
+.\ChoosePrDel.cpp : \
+	".\ChoosePrDel.h"\
+	".\MainFrm.h"\
+	".\Plan.h"\
+	".\PlanDoc.h"\
+	".\PreacherDlg.h"\
+	
+
+.\ColumnView.cpp : \
+	".\ColumnView.h"\
+	".\PlaceTimeDlg.h"\
+	".\Plan.h"\
+	".\PlanDoc.h"\
+	
+
+.\ConfirmClearDlg.cpp : \
+	".\ConfirmClearDlg.h"\
+	".\Plan.h"\
+	
+
+.\CornerView.cpp : \
+	".\CornerView.h"\
+	".\Plan.h"\
+	
+
+.\DetailDlg.cpp : \
+	".\DetailDlg.h"\
+	".\Plan.h"\
+	
+
+.\Dialog1.cpp : \
+	".\Dialog1.h"\
+	".\Plan.h"\
+	
+
+.\EditPreacherDlg.cpp : \
+	".\EditPreacherDlg.h"\
+	".\InvPrchDlg1.h"\
+	".\Plan.h"\
+	".\PlanDoc.h"\
+	".\SortPreachers.h"\
+	
+
+.\InvPrchDlg1.cpp : \
+	".\InvPrchDlg1.h"\
+	".\Plan.h"\
+	
+
+.\InvPrchDlg2.cpp : \
+	".\InvPrchDlg2.h"\
+	".\Plan.h"\
+	
+
+.\InvPrchDlg3.cpp : \
+	".\InvPrchDlg3.h"\
+	".\Plan.h"\
+	
+
+.\LabelDlg.cpp : \
+	".\LabelDlg.h"\
+	".\Plan.h"\
+	".\PlanDoc.h"\
+	
+
+.\LayNotUsedDlg.cpp : \
+	".\LayNotUsedDlg.h"\
+	".\Plan.h"\
+	
+
+.\LocalOrdDlg.cpp : \
+	".\LocalOrdDlg.h"\
+	".\Plan.h"\
+	
+
+.\MainFrm.cpp : \
+	".\ColumnView.h"\
+	".\CornerView.h"\
+	".\MainFrm.h"\
+	".\Plan.h"\
+	".\PlanView.h"\
+	".\RowView.h"\
+	".\Splash1.h"\
+	
+
+.\NoMoreChurchesDlg.cpp : \
+	".\NoMoreChurchesDlg.h"\
+	".\Plan.h"\
+	
+
+.\NoMoreDatesDlg.cpp : \
+	".\NoMoreDatesDlg.h"\
+	".\Plan.h"\
+	
+
+.\NoMorePreachersDlg.cpp : \
+	".\NoMorePreachersDlg.h"\
+	".\Plan.h"\
+	
+
+.\NotAvailDlg.cpp : \
+	".\NotAvailDlg.h"\
+	".\Plan.h"\
+	
+
+.\NotFilledDlg.cpp : \
+	".\NotFilledDlg.h"\
+	".\Plan.h"\
+	
+
+.\OptionsDlg.cpp : \
+	".\OptionsDlg.h"\
+	".\Plan.h"\
+	
+
+.\OrdNotAllocDlg.cpp : \
+	".\OrdNotAllocDlg.h"\
+	".\Plan.h"\
+	
+
+.\PlaceTimeDlg.cpp : \
+	".\NoMoreChurchesDlg.h"\
+	".\PlaceTimeDlg.h"\
+	".\Plan.h"\
+	".\PlanDoc.h"\
+	
+
+.\Plan.cpp : \
+	".\MainFrm.h"\
+	".\Plan.h"\
+	".\PlanDoc.h"\
+	".\PlanView.h"\
+	".\Splash1.h"\
+	
+
+!IF  "$(CFG)" == "Plan - Win32 Release"
+
+!ELSEIF  "$(CFG)" == "Plan - Win32 Debug"
+
+!ENDIF 
+
+.\Plan.rc : \
+	".\res\bitmap1.bmp"\
+	".\res\icon1.ico"\
+	".\res\icon2.ico"\
+	".\res\Plan.rc2"\
+	".\res\PlanDoc.ico"\
+	".\res\Toolbar.bmp"\
+	".\Splsh16.bmp"\
+	
+
+.\PlanDoc.cpp : \
+	".\LabelDlg.h"\
+	".\Plan.h"\
+	".\PlanDoc.h"\
+	".\PrchNotKnownDlg.h"\
+	".\PreacherDlg.h"\
+	".\SaveCurrent.h"\
+	".\SortAccredited.h"\
+	".\SortPreachers.h"\
+	
+
+.\PlanView.cpp : \
+	".\BlockDlg.h"\
+	".\ChooseEditDlg.h"\
+	".\ChoosePrDel.h"\
+	".\ConfirmClearDlg.h"\
+	".\DetailDlg.h"\
+	".\Dialog1.h"\
+	".\EditPreacherDlg.h"\
+	".\LabelDlg.h"\
+	".\LayNotUsedDlg.h"\
+	".\LocalOrdDlg.h"\
+	".\NoMorePreachersDlg.h"\
+	".\NotAvailDlg.h"\
+	".\NotFilledDlg.h"\
+	".\OptionsDlg.h"\
+	".\OrdNotAllocDlg.h"\
+	".\PlaceTimeDlg.h"\
+	".\Plan.h"\
+	".\PlanDoc.h"\
+	".\PlanView.h"\
+	".\PrchAvailDlg2.h"\
+	".\PrchNotKnownDlg.h"\
+	".\PreacherDlg.h"\
+	".\ServiceDayDlg.h"\
+	
+
+.\PrchAvailDlg2.cpp : \
+	".\Block2Dlg.h"\
+	".\Plan.h"\
+	".\PlanDoc.h"\
+	".\PrchAvailDlg2.h"\
+	
+
+.\PrchNotKnownDlg.cpp : \
+	".\Plan.h"\
+	".\PrchNotKnownDlg.h"\
+	
+
+.\PreacherDlg.cpp : \
+	".\InvPrchDlg1.h"\
+	".\InvPrchDlg2.h"\
+	".\InvPrchDlg3.h"\
+	".\NoMorePreachersDlg.h"\
+	".\Plan.h"\
+	".\PlanDoc.h"\
+	".\PreacherDlg.h"\
+	".\SortPreachers.h"\
+	
+
+.\RowView.cpp : \
+	".\Plan.h"\
+	".\PlanDoc.h"\
+	".\RowView.h"\
+	".\ServiceDayDlg.h"\
+	
+
+.\SaveCurrent.cpp : \
+	".\Plan.h"\
+	".\SaveCurrent.h"\
+	
+
+.\ServiceDayDlg.cpp : \
+	".\NoMoreDatesDlg.h"\
+	".\Plan.h"\
+	".\PlanDoc.h"\
+	".\PlanView.h"\
+	".\PrchAvailDlg2.h"\
+	".\ServiceDayDlg.h"\
+	".\SortCalendar.h"\
+	
+
+.\SortAccredited.cpp : \
+	".\Plan.h"\
+	".\SortAccredited.h"\
+	
+
+.\SortCalendar.cpp : \
+	".\Plan.h"\
+	".\SortCalendar.h"\
+	
+
+.\SortPreachers.cpp : \
+	".\Plan.h"\
+	".\SortPreachers.h"\
+	
+
+.\Splash1.cpp : \
+	".\Splash1.h"\
+	
+
+.\StdAfx.cpp : \
+	"..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	".\StdAfx.h"\
+	
+
+!IF  "$(CFG)" == "Plan - Win32 Release"
+
+!ELSEIF  "$(CFG)" == "Plan - Win32 Debug"
+
+!ENDIF 
+
+!IF  "$(CFG)" == "Plan - Win32 Release"
+
+!ELSEIF  "$(CFG)" == "Plan - Win32 Debug"
+
+!ENDIF 
+

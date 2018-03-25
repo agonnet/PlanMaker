@@ -1,0 +1,1397 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\PlanMaker.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "New",                         ID_FILE_NEW, HELP
+        MENUITEM "Open...",                     ID_FILE_OPEN
+        MENUITEM "Close",                       ID_FILE_CLOSE
+        MENUITEM "Save",                        ID_FILE_SAVE
+        MENUITEM "Save As...",                  ID_FILE_SAVE_AS
+        MENUITEM "Make Default",                ID_FILE_MAKEDEFAULT
+        MENUITEM SEPARATOR
+        POPUP "P&rint Setup"
+        BEGIN
+            MENUITEM "Printer...",                  ID_FILE_PRINTSETUP_PRINTER
+
+            MENUITEM "Font...",                     ID_FILE_PRINTSETUP_FONT
+        END
+        POPUP "Print Preview"
+        BEGIN
+            MENUITEM "Plan",                        ID_FILE_PRINTPREVIEW_PLAN
+
+            MENUITEM "Analysis",                    ID_FILE_PRINTPREVIEW_ANALYSIS
+
+            MENUITEM "Labels...",                   ID_FILE_PRINTPREVIEW_LABELS
+
+        END
+        POPUP "Print"
+        BEGIN
+            MENUITEM "Plan",                        ID_FILE_PRINT_PLAN
+            MENUITEM "Analysis",                    ID_FILE_PRINT_ANALYSIS
+            MENUITEM "Labels...",                   ID_FILE_PRINT_LABELS
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Options",                     ID_FILE_OPTIONS
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo",                       ID_EDIT_UNDO
+        MENUITEM "&Redo",                       ID_EDIT_REDO
+        POPUP "Copy"
+        BEGIN
+            MENUITEM "Plan",                        ID_EDIT_COPY_PLAN
+            MENUITEM "Preachers",                   ID_EDIT_COPY_PREACHERS
+            MENUITEM "Visiting Preachers",          ID_EDIT_COPY_VISITORS
+            MENUITEM "Key to Services",             ID_EDIT_COPY_KEY
+            MENUITEM "Analysis",                    ID_EDIT_COPY_ANALYSIS
+        END
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Analysis",                    ID_VIEW_ANALYSIS
+        MENUITEM "Available Preachers",         ID_VIEW_AVAILABLEPREACHERS
+        MENUITEM "Preacher Records",            ID_VIEW_PREACHERRECORDS
+        MENUITEM SEPARATOR
+        MENUITEM "Fit Width",                   ID_VIEW_FITWIDTH
+    END
+    POPUP "&Preachers"
+    BEGIN
+        MENUITEM "Add",                         ID_PREACHERNEW
+        MENUITEM "Edit",                        ID_PREACHEREDIT
+        MENUITEM "Delete",                      ID_PREACHERDEL
+        MENUITEM "Availability",                ID_PREACHERAVAIL
+        POPUP "Availablity Form"
+        BEGIN
+            MENUITEM "Export",                      ID_PREACHERS_AVAILABLITYFILE_EXPORT
+
+            MENUITEM "Import",                      ID_PREACHERS_AVAILABLITYFILE_IMPORT
+
+        END
+        MENUITEM "Associations",                ID_PREACHERPREFS
+        MENUITEM "Allocate",                    ID_ALLOCATE
+        MENUITEM "Deallocate",                  ID_PREACHERS_DEALLOCATE
+        MENUITEM "Clear All",                   ID_PREACHERS_CLEARALL
+        MENUITEM "Reset Options",               ID_PREACHERS_RESETOPTIONS
+        MENUITEM "Reset Weightings",            ID_PREACHERS_RESETWEIGHTINGS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "PlanMaker Help",              ID_HELP_INDEX
+        MENUITEM "&About PlanMaker...",         ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 241, 126
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About PlanMaker"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "PlanMaker Version 5.02",IDC_STATIC,40,10,76,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2001-2012 David Ainsworth\nSupport: d_ainsworth@sky.com\nWebsite: http://www.churchpartnership.org.uk/planmaker",
+                    IDC_STATIC,37,33,191,28
+    DEFPUSHBUTTON   "OK",IDOK,184,7,50,14,WS_GROUP
+    LTEXT           "If you need help with using PlanMaker, please e-mail the above address; if you have a problem with PlanMaker, it would be appreciated if you would attach the file plan.dat, which can be found in the Planmaker subfolder of your Documents Folder.",
+                    IDC_STATIC,13,63,216,33
+    LTEXT           "Before e-mailing for help, please visit the website to ensure that you have the latest version of PlanMaker installed.",
+                    IDC_STATIC,13,102,216,17
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "PlanMaker MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "PlanMaker\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "PlanMaker.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "PlanMaker Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SERVICES            "Services: 0000"
+    IDS_ALLOCATED           "Allocated: 0000"
+    IDS_UNALLOCATED         "Unallocated: 0000 (Reserved: 0000)"
+    IDS_STATUS              "Allocation Status: Pending"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "PlanMaker\n\nPlanMaker\nPlanMaker Data File (*.pln)\n.pln\nPlanMaker.Document\nPlanMaker Document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FAMILY               "Mark or unmark the selected Service(s) as Family Service or All Age Worship"
+    ID_PARADE               "Mark or unmark the selected Service(s) as Parade"
+    ID_BAPTISM              "Mark or unmark the selected Service(s) as Baptism"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_UNITED               "Mark or unmark the selected Service(s) as United"
+    ID_RESERVED             "Mark or unmark the selected Service(s) to prevent PlanMaker from allocating Preachers to them"
+    ID_INSPREACHER          "Open the Insert Preacher Dialog from which you can choose a Preacher for the selected Service"
+    ID_DETAIL               "Open the Service Details Dialog into which you can enter a note about the selected Service(s)"
+    ID_DELPREACHER          "Delete the Preacher(s) from the selected Service"
+    ID_DELDETAIL            "Delete the Service Details from the selected Service(s)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_COMMUNION            "Mark or unmark the selected Service(s) as Communion or Sacrament"
+    ID_PREACHERNEW          "Add a new Preacher to the Database"
+    ID_PREACHEREDIT         "Edit information about a Preacher already in the Database"
+    ID_PREACHERDEL          "Delete a Preacher from the Database"
+    ID_PREACHERAVAIL        "Enter or edit a Preacher's availability and/or options"
+    ID_ALLOCATE             "Allocate Preachers to the Churches and Services on the Plan"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CLEAR                "Clear the Preachers from the Plan"
+    ID_NOSERVICE            "Mark or unmark the selected cell(s) as No Service"
+    ID_FILE_PRINT_LABELS    "Print the Address Labels"
+    ID_EDIT_COPY_PLAN       "Copy the Plan to the Windows Clipboard"
+    ID_EDIT_COPY_PREACHERS  "Copy the list of local Preachers to the Windows Clipboard"
+    ID_EDIT_COPY_VISITORS   "Copy the list of visiting Preachers to the Windows Clipboard"
+    ID_EDIT_COPY_KEY        "Copy the Service Keys to the Windows Clipboard"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_PRINT_PLAN      "Print the Plan"
+    ID_FILE_PRINTPREVIEW_PLAN "Show how the Plan will appear when printed"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_OPTIONS         "Show the Options Dialog"
+    ID_PREACHERS_CLEARALL   "Clear all the Preachers from the Plan, including ones you have inserted"
+    ID_PREACHERS_CLEARALLOCATED 
+                            "Clear Preachers who have been added to the Plan by PlanMaker"
+    ID_PREACHERS_CLEARCONSTRAINTS 
+                            "Clear all Preacher options for One Service a Day or No Consecutive Dates, and clear Preacher Limits"
+    ID_PREACHERS_RESETWEIGHTINGS 
+                            "Reset the weighting for Lay Preachers and Visitors to 1 in each Church"
+    ID_CUSTOM1              "Add this Service Detail to the selected Service(s)"
+    ID_CUSTOM2              "Add this Service Detail to the selected Service(s)"
+    ID_CUSTOM3              "Add this Service Detail to the selected Service(s)"
+    ID_CUSTOM4              "Add this Service Detail to the selected Service(s)"
+    ID_CUSTOM5              "Add this Service Detail to the selected Service(s)"
+    ID_CUSTOM6              "Add this Service Detail to the selected Service(s)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CUSTOM7              "Add this Service Detail to the selected Service(s)"
+    ID_CUSTOM8              "Add this Service Detail to the selected Service(s)"
+    ID_CUSTOM9              "Add this Service Detail to the selected Service(s)"
+    ID_CUSTOM10             "Add this Service Detail to the selected Service(s)"
+    ID_FILE_PRINTSETUP_PRINTER "Display a Printer Setup Dialog"
+    ID_FILE_PRINTSETUP_FONT "Display a Font Setup Dialog"
+    ID_FILE_PRINTPREVIEW_ANALYSIS 
+                            "Show how the Analysis will appear when printed"
+    ID_FILE_PRINT_ANALYSIS  "Print the Analysis of the Plan"
+    ID_EDIT_COPY_ANALYSIS   "Copy the Analysis to the Windows Clipboard"
+    ID_CUSTOM11             "Add this Service Detail to the selected Service(s)"
+    ID_CUSTOM12             "Add this Service Detail to the selected Service(s)"
+    ID_CUSTOM13             "Add this Service Detail to the selected Service(s)"
+    ID_CUSTOM14             "Add this Service Detail to the selected Service(s)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CUSTOM15             "Add this Service Detail to the selected Service(s)"
+    ID_CUSTOM16             "Add this Service Detail to the selected Service(s)"
+    ID_CUSTOM17             "Add this Service Detail to the selected Service(s)"
+    ID_CUSTOM18             "Add this Service Detail to the selected Service(s)"
+    ID_CUSTOM19             "Add this Service Detail to the selected Service(s)"
+    ID_CUSTOM20             "Add this Service Detail to the selected Service(s)"
+    ID_CUSTOM21             "Add this Service Detail to the selected Service(s)"
+    ID_CUSTOM22             "Add this Service Detail to the selected Service(s)"
+    ID_CUSTOM23             "Add this Service Detail to the selected Service(s)"
+    ID_CUSTOM24             "Add this Service Detail to the selected Service(s)"
+    ID_INSERT0              "Insert this Minister for the selected Service"
+    ID_DELETE0              "Delete this Preacher from the selected Service"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_ANALYSIS        "Open the Analysis Window"
+    ID_VIEW_PREACHERAVAILABILITY "Open the Preacher Availability Window"
+    ID_EDIT_UNDOREDO        "Undo your last action"
+    ID_INSERT1              "Insert this Minister for the selected Service"
+    ID_INSERT2              "Insert this Minister for the selected Service"
+    ID_INSERT3              "Insert this Minister for the selected Service"
+    ID_INSERT4              "Insert this Minister for the selected Service"
+    ID_INSERT5              "Insert this Minister for the selected Service"
+    ID_INSERT6              "Insert this Minister for the selected Service"
+    ID_INSERT7              "Insert this Minister for the selected Service"
+    ID_INSERT8              "Insert this Minister for the selected Service"
+    ID_INSERT9              "Insert this Minister for the selected Service"
+    ID_INSERT10             "Insert this Minister for the selected Service"
+    ID_INSERT11             "Insert this Minister for the selected Service"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DELETE1              "Delete this Preacher from the selected Service"
+    ID_DELETE2              "Delete this Preacher from the selected Service"
+    ID_DELETE3              "Delete this Preacher from the selected Service"
+    ID_FILE_MAKEDEFAULT     "Make the currently open Plan into the Default Plan\nMake Default"
+    ID_FILE_PRINTPREVIEW_LABELS 
+                            "Show how the Address Labels will appear when printed"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_PREACHERRECORDS "Open the Preacher Records Application"
+    ID_PREACHERS_AVAILABLITYFILE_EXPORT "Export an Availability Form"
+    ID_PREACHERS_AVAILABLITYFILE_IMPORT "Import an Availability Form"
+    ID_PREACHERS_DEALLOCATE "Delete all the Preachers who have been allocated by PlanMaker"
+    ID_PREACHERPREFS        "Enter the number of times a Preacher will go to a Church, and set options for special Services"
+    ID_FILE_EXPORT          "Export the on-screen Plan as an XML file\nExport"
+    ID_FILE_IMPORT_FROMFILE "Import a Plan from an XML file\nImport from file"
+    ID_FILE_IMPORT_FROMURL  "Import a Plan from a Website\nImport from URL"
+    ID_PREACHERS_RESETOPTIONS 
+                            "Reset Preacher options such as Only one Service a Day or No Consecutive Dates"
+    ID_VIEW_FITWIDTH        "Fit the width of the Plan to the width of the screen"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_AVAILABLEPREACHERS 
+                            "Show how many Preachers are available for unallocated Services"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "PlanMaker"
+    AFX_IDS_IDLEMESSAGE     "For Help, Press F1"
+    AFX_IDS_HELPMODEMESSAGE2 "Select an object on which to get Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new Plan based on the on-screen Plan\nNew"
+    ID_FILE_OPEN            "Open a Plan you have saved\nOpen"
+    ID_FILE_CLOSE           "Close a Plan you have opened\nClose"
+    ID_FILE_SAVE            "Save the currently open Plan\nSave"
+    ID_FILE_SAVE_AS         "Save the currently open Plan with a different filename\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the Plan and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Show the PlanMaker version number, copyright information and support contact details\nAbout"
+    ID_APP_EXIT             "Quit PlanMaker"
+    ID_HELP_INDEX           "Open the Help System"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "M1"
+    BEGIN
+        MENUITEM "Communion",                   ID_COMMUNION
+        MENUITEM "Family Service",              ID_FAMILY
+        MENUITEM "Parade",                      ID_PARADE
+        MENUITEM "Baptism",                     ID_BAPTISM
+        MENUITEM "United Service",              ID_UNITED
+        POPUP "Custom"
+        BEGIN
+            MENUITEM "",                            ID_CUSTOM10
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "No Service",                  ID_NOSERVICE
+        MENUITEM "Reserved",                    ID_RESERVED
+        POPUP "Insert"
+        BEGIN
+            MENUITEM "Any Preacher",                ID_INSPREACHER
+            MENUITEM "Service Details",             ID_DETAIL
+        END
+        POPUP "Delete"
+        BEGIN
+            MENUITEM "Preacher",                    ID_DELPREACHER
+            MENUITEM "Service Details",             ID_DELDETAIL
+        END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_INSERTDLG DIALOGEX 0, 0, 243, 97
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Insert a Preacher"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,187,74,50,14,WS_DISABLED
+    PUSHBUTTON      "Cancel",IDCANCEL,119,74,50,14
+    LISTBOX         IDC_LIST1,7,7,102,81,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "The list to the left shows all the Preachers who may be inserted for the selected Service. To insert a Preacher, click a name and click OK or, if you do not wish to proceed, click Cancel.",
+                    IDC_STATIC,119,7,117,52
+END
+
+IDD_PREACHER DIALOGEX 0, 0, 317, 195
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Add a new Preacher"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT11,29,7,41,12,ES_AUTOHSCROLL,0,HIDC_EDIT11
+    EDITTEXT        IDC_EDIT1,117,7,67,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,228,7,82,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,47,33,107,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,202,33,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,47,59,85,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,168,60,57,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,271,60,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,64,85,93,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,64,113,93,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,64,141,93,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT12,64,169,93,12,ES_AUTOHSCROLL
+    CONTROL         "Ordained",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,176,87,45,10
+    CONTROL         "Stipendiary",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,176,102,51,10
+    CONTROL         "On Trial",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,176,117,41,10
+    CONTROL         "On Note",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,176,132,43,10
+    CONTROL         "Visitor",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,176,147,35,10
+    CONTROL         "Reserved",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,176,162,47,10
+    CONTROL         "Sacraments",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,241,88,53,10
+    CONTROL         "All Age / Family",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,241,102,65,10
+    CONTROL         "Parade",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,241,117,39,10
+    DEFPUSHBUTTON   "OK",IDOK,250,173,50,14
+    PUSHBUTTON      "More",IDC_BUTTONMORE,250,135,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,250,154,50,14
+    LTEXT           "First Name *",IDC_STATIC,76,8,39,8
+    LTEXT           "Surname *",IDC_STATIC,192,8,34,8
+    LTEXT           "Address 1",IDC_STATIC,7,35,32,8
+    LTEXT           "Address 2",IDC_STATIC,165,35,32,8
+    LTEXT           "Town",IDC_STATIC,7,60,19,8
+    LTEXT           "County",IDC_STATIC,141,61,23,8
+    LTEXT           "Postcode",IDC_STATIC,235,61,31,8
+    LTEXT           "Telephone",IDC_STATIC,7,87,35,8
+    LTEXT           "Email",IDC_STATIC,7,114,18,8
+    LTEXT           "Screen Name *",IDC_STATIC,7,143,49,8
+    LTEXT           "Title",IDC_STATIC,7,8,14,8
+    LTEXT           "Additional Information",IDC_STATIC,7,168,42,17
+END
+
+IDD_EDITPREACHERDLG DIALOGEX 0, 0, 317, 195
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Edit Preacher"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT11,29,7,41,12,ES_AUTOHSCROLL,0,HIDC_EDIT11
+    EDITTEXT        IDC_EDIT1,117,7,67,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,228,7,82,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,47,33,107,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,202,33,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,47,59,85,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,168,60,57,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,271,60,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,64,85,93,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,64,113,93,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,64,141,93,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT12,64,169,93,12,ES_AUTOHSCROLL
+    CONTROL         "Ordained",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,176,87,45,10
+    CONTROL         "Stipendiary",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,176,102,51,10
+    CONTROL         "On Trial",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,176,117,41,10
+    CONTROL         "On Note",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,176,132,43,10
+    CONTROL         "Visitor",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,176,147,35,10
+    CONTROL         "Reserved",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,176,162,47,10
+    CONTROL         "Sacraments",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,241,88,53,10
+    CONTROL         "All Age / Family",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,241,102,65,10
+    CONTROL         "Parade",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,241,117,39,10
+    DEFPUSHBUTTON   "OK",IDOK,250,173,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,250,152,50,16
+    LTEXT           "First Name *",IDC_STATIC,76,8,39,8
+    LTEXT           "Surname *",IDC_STATIC,192,8,34,8
+    LTEXT           "Address 1",IDC_STATIC,7,35,32,8
+    LTEXT           "Address 2",IDC_STATIC,165,35,32,8
+    LTEXT           "Town",IDC_STATIC,7,60,19,8
+    LTEXT           "County",IDC_STATIC,141,61,23,8
+    LTEXT           "Postcode",IDC_STATIC,235,61,31,8
+    LTEXT           "Telephone",IDC_STATIC,7,87,35,8
+    LTEXT           "Email",IDC_STATIC,7,114,18,8
+    LTEXT           "Screen Name *",IDC_STATIC,7,143,49,8
+    LTEXT           "Title",IDC_STATIC,7,8,14,8
+    LTEXT           "Additional Information",IDC_STATIC,7,168,42,17
+    PUSHBUTTON      "<",IDC_BUTTONPREV,250,135,20,13
+    PUSHBUTTON      ">",IDC_BUTTONNEXT,280,135,20,13
+END
+
+IDD_CHOOSEPREDIT DIALOGEX 0, 0, 247, 165
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Choose a Preacher to Edit"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Edit",IDC_EDIT,186,136,50,17,WS_DISABLED
+    PUSHBUTTON      "Close",IDCANCEL,186,103,50,17
+    LTEXT           "Select a Preacher in the box to the left and click OK. The Edit Preacher Dialog will then open with the details of the Preacher already filled in.",
+                    IDC_STATIC,137,10,96,46
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_LIST | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,8,7,116,152
+END
+
+IDD_CHOOSEPRDEL DIALOGEX 0, 0, 247, 165
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Delete a Preacher"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Delete",IDC_DELETE,186,139,50,17,WS_DISABLED
+    PUSHBUTTON      "Close",IDCANCEL,186,106,50,17
+    LTEXT           "Select a Preacher in the box to the left and click Delete. You cannot delete a Preacher who is already on your Plan.",
+                    IDC_STATIC,137,10,96,37
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_LIST | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,8,7,116,152
+END
+
+IDD_SERVICEDAYDLG DIALOG DISCARDABLE  0, 0, 322, 211
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Service Days"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,197,191,53,15
+    PUSHBUTTON      "Cancel",IDCANCEL,258,191,53,15
+    CONTROL         "MonthCalendar2",IDC_MONTHCALENDAR,"SysMonthCal32",
+                    MCS_NOTODAY | WS_TABSTOP,7,7,135,91
+    LISTBOX         IDC_LIST1,169,7,140,91,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,7,184,115,22,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_DISABLED | WS_VSCROLL
+    PUSHBUTTON      "Add Note",IDC_ADDNOTE,135,191,53,15
+    LTEXT           "Click the dates on which there are to be Services - they will appear in the right hand box. You can add them in any order - they will be sorted for you.",
+                    IDC_STATIC,13,105,279,18
+    PUSHBUTTON      "Delete",IDC_DELETE,258,168,53,15,WS_DISABLED
+    LTEXT           "To delete a date, select it in the right hand box and click Delete.",
+                    IDC_STATIC,13,150,202,8
+    LTEXT           "If you would like to add a note or comment after a date, click the date in the right hand box, type the note in the box below and click Add Note. You can enter notes on separate lines by using the Return key after each line.",
+                    IDC_STATIC,13,123,277,26
+    LTEXT           "When you have finished, click OK to apply your changes, or click Cancel to discard them.",
+                    IDC_STATIC,13,161,225,21
+END
+
+IDD_PLACETIMEDLG DIALOGEX 0, 0, 311, 145
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Places and Times"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Modify this row",IDC_MODIFY,83,122,67,17,WS_DISABLED
+    PUSHBUTTON      "Cancel",IDCANCEL,237,122,67,17
+    EDITTEXT        IDC_EDIT1,16,19,180,27,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "Early morning",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,
+                    219,25,58,10
+    CONTROL         "Morning",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,219,46,
+                    41,10
+    CONTROL         "Afternoon",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,219,
+                    67,47,10
+    CONTROL         "Evening",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,219,88,
+                    42,10
+    PUSHBUTTON      "Delete this row",IDC_DELETE,160,122,67,17,WS_DISABLED
+    PUSHBUTTON      "Insert a new row",IDC_INSERT,6,122,67,17,WS_DISABLED
+    GROUPBOX        "Type of Service",IDC_STATIC,207,7,95,104
+    GROUPBOX        "Where, when and optional details",IDC_STATIC,9,7,193,48
+    LTEXT           "To add a Church, type the Church name and the Service time in the Edit Box above, click the appropriate Radio Button and click Insert a new row. The new Church will appear in the row you clicked and those below will be moved down.",
+                    IDC_STATIC,9,59,197,34
+    LTEXT           "You can add other details in the Edit Box - these will appear on separate lines if you press the Return key after each.",
+                    IDC_STATIC,9,94,189,18
+END
+
+IDD_DETAILDLG DIALOGEX 0, 0, 206, 113
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Service Details"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,111,92,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,43,92,50,14
+    EDITTEXT        IDC_EDIT1,7,31,189,14,ES_AUTOHSCROLL
+    LTEXT           "Type the text that you wish to include in the cell and click OK. For Help, press F1.",
+                    IDC_STATIC,35,7,134,22
+    LTEXT           "If you wish to show a code in your Plan, rather than the full text, enter the code in this box. If you enter a code, a menu item will be added to the pop-up menu so that you can use it again.",
+                    IDC_STATIC,7,51,153,33
+    EDITTEXT        IDC_EDIT2,166,54,30,15,ES_AUTOHSCROLL | WS_DISABLED
+END
+
+IDD_PRCHAVAILDLG DIALOGEX 0, 0, 312, 219
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Preacher Availability and Options"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_LIST | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,22,19,114,119
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_LIST | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | 
+                    WS_TABSTOP,172,21,118,101
+    CONTROL         "EM",IDC_CHECK6,"Button",BS_AUTO3STATE | BS_LEFTTEXT | 
+                    BS_RIGHT | WS_DISABLED | WS_TABSTOP,173,128,27,10
+    CONTROL         "M",IDC_CHECK7,"Button",BS_AUTO3STATE | BS_LEFTTEXT | 
+                    BS_RIGHT | WS_DISABLED | WS_TABSTOP,206,128,22,10
+    CONTROL         "A",IDC_CHECK8,"Button",BS_AUTO3STATE | BS_LEFTTEXT | 
+                    BS_RIGHT | WS_DISABLED | WS_TABSTOP,234,128,21,10
+    CONTROL         "E",IDC_CHECK9,"Button",BS_AUTO3STATE | BS_LEFTTEXT | 
+                    BS_RIGHT | WS_DISABLED | WS_TABSTOP,261,128,21,10
+    CONTROL         "Only one Service a day",IDC_CHECK4,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_DISABLED | WS_TABSTOP,
+                    169,163,120,10
+    CONTROL         "No consecutive dates",IDC_CHECK5,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_DISABLED | WS_TABSTOP,
+                    169,179,120,10
+    COMBOBOX        IDC_COMBO1,253,194,36,70,CBS_DROPDOWN | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Cancel",IDCANCEL,84,173,52,16
+    DEFPUSHBUTTON   "OK",IDOK,25,173,52,16
+    LTEXT           "Allocation Limit:",IDC_STATIC7,169,196,50,8,WS_DISABLED
+    GROUPBOX        "Options",IDC_STATIC6,162,149,138,62
+    GROUPBOX        "Preachers",IDC_STATIC1,13,6,133,142
+    GROUPBOX        "Availability",IDC_STATIC2,162,6,138,137
+END
+
+IDD_PRCHPREFSDLG DIALOGEX 0, 0, 298, 215
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Preacher Associations"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_LIST | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,19,19,105,119
+    CONTROL         "List3",IDC_LIST4,"SysListView32",LVS_LIST | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | 
+                    WS_TABSTOP,151,21,130,100
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | TBS_ENABLESELRANGE | TBS_TOOLTIPS | 
+                    WS_DISABLED | WS_TABSTOP,199,130,81,21
+    CONTROL         "Sacraments:",IDC_CHECK1,"Button",BS_AUTO3STATE | 
+                    BS_LEFTTEXT | BS_LEFT | WS_DISABLED | WS_TABSTOP,152,157,
+                    123,10
+    CONTROL         "Family Services:",IDC_CHECK2,"Button",BS_AUTO3STATE | 
+                    BS_LEFTTEXT | BS_LEFT | WS_DISABLED | WS_TABSTOP,152,172,
+                    123,10
+    CONTROL         "Parade Services:",IDC_CHECK3,"Button",BS_AUTO3STATE | 
+                    BS_LEFTTEXT | BS_LEFT | WS_DISABLED | WS_TABSTOP,152,187,
+                    123,10
+    PUSHBUTTON      "Cancel",IDCANCEL,77,171,54,16
+    DEFPUSHBUTTON   "OK",IDOK,15,171,54,16
+    LTEXT           "",IDC_STATIC9,154,140,46,8,WS_DISABLED
+    GROUPBOX        "Churches",IDC_STATIC3,144,6,146,195
+    GROUPBOX        "Preachers",IDC_STATIC1,9,6,125,141
+END
+
+IDD_LABELS DIALOGEX 0, 0, 333, 146
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Label Setup"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,272,124,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,215,124,50,14
+    COMBOBOX        IDC_COMBO1,105,42,25,64,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,157,42,25,64,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,290,17,25,62,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO4,290,36,25,69,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Labels across",IDC_STATIC,96,30,44,8
+    LTEXT           "Labels down",IDC_STATIC,153,30,41,8
+    LTEXT           "Left Margin mm",IDC_STATIC,217,17,49,8
+    LTEXT           "Top Margin mm",IDC_STATIC,217,38,50,8
+    COMBOBOX        IDC_COMBO5,105,92,25,50,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO6,155,92,25,48,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Left Offset mm",IDC_STATIC,95,81,46,8
+    LTEXT           "Top Offset mm",IDC_STATIC,151,81,47,8
+    GROUPBOX        "Sheet Properties",IDC_STATIC,91,4,112,133
+    GROUPBOX        "Print Properties",IDC_STATIC,210,4,116,116
+    COMBOBOX        IDC_COMBO7,291,73,25,54,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Start Printing at row",IDC_STATIC,217,76,62,8
+    LTEXT           "Font Size",IDC_STATIC,217,57,30,8
+    COMBOBOX        IDC_COMBO8,290,54,25,57,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Don't print address label for preachers with e-mail",
+                    IDC_CHECK1,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | 
+                    WS_TABSTOP,219,92,97,24
+    GROUPBOX        "Local Preachers",IDC_STATIC,8,4,76,66
+    CONTROL         "None",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    15,16,33,10
+    CONTROL         "All",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,15,29,23,10
+    CONTROL         "Planned",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,15,42,
+                    42,10
+    CONTROL         "Available",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,15,55,
+                    45,10
+    CONTROL         "None",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    15,83,33,10
+    CONTROL         "All",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON,15,96,23,
+                    10
+    CONTROL         "Planned",IDC_RADIO11,"Button",BS_AUTORADIOBUTTON,15,109,
+                    42,10
+    CONTROL         "Available",IDC_RADIO12,"Button",BS_AUTORADIOBUTTON,15,
+                    122,45,10
+    GROUPBOX        "Visitors",IDC_STATIC,8,72,76,66
+END
+
+IDD_OPTIONSDLG DIALOG DISCARDABLE  0, 0, 283, 206
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,74,182,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,146,182,50,14
+    CONTROL         "Warn me if any available Lay Preachers or Visitors are unused",
+                    IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,15,
+                    210,10
+    CONTROL         "Don't include the year in the date",IDC_CHECK3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,93,120,10
+    CONTROL         "List Accredited Preachers separately",IDC_CHECK4,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,106,131,10
+    CONTROL         "Use ""Sacrament"" rather than ""Communion""",IDC_CHECK5,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,132,153,10
+    CONTROL         "Always print ""No Service"" on the Plan where applicable",
+                    IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,145,
+                    191,10
+    CONTROL         "Don't allocate Lay Preachers to the same Church in consecutive Plans",
+                    IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,41,
+                    237,10
+    CONTROL         "Automatically fill Local Ordained Ministers' unused dates",
+                    IDC_CHECK9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,80,
+                    191,10
+    CONTROL         "Use ""All Age Worship"" rather than ""Family Service""",
+                    IDC_CHECK10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,119,
+                    218,10
+    CONTROL         "Don't allocate Lay Preachers more than once in any Church",
+                    IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,28,
+                    241,10
+    CONTROL         "Don't allocate Ministers to consecutive Services in the same Church",
+                    IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,54,
+                    266,10
+    CONTROL         "Don't allocate the same Preacher more than once a day in the same Church",
+                    IDC_CHECK11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,67,
+                    254,10
+    CONTROL         "Only print ""No Service"" where applicable if there is no text in the cell",
+                    IDC_CHECK12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,158,
+                    257,10
+END
+
+IDD_PRCHSTATUS DIALOGEX 0, 0, 186, 95
+STYLE WS_POPUP
+EXSTYLE WS_EX_TRANSPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+END
+
+IDD_INCOMPATDLG DIALOG DISCARDABLE  0, 0, 263, 159
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Churches not allocated together"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,143,138,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,70,138,50,14
+    LISTBOX         IDC_LIST1,8,7,120,82,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LISTBOX         IDC_LIST2,136,7,120,82,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "",IDC_STATIC1,7,95,249,37
+END
+
+IDD_IMPORTDLG DIALOG DISCARDABLE  0, 0, 186, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Import Availability"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,41,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,69,50,14
+    LISTBOX         IDC_LIST1,7,7,105,76,NOT LBS_NOTIFY | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Show Form",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,129,17,51,10
+END
+
+IDD_SHOWFORMDLG DIALOG DISCARDABLE  0, 0, 186, 90
+STYLE WS_POPUP | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PRCHAVAILDLG, DIALOG
+    BEGIN
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_INCOMPATDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_IMPORTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_SHOWFORMDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SPLASH              BITMAP  DISCARDABLE     "Splsh16.bmp"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PlanMaker.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_LABELS DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO2, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO3, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO3, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COMBO4, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO4, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COMBO5, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO5, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COMBO6, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO6, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COMBO8, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO8, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO8, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO8, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO8, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO8, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO8, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO8, 0x403, 3, 0
+0x3631, "\000" 
+    0
+END
+
+IDD_PRCHAVAILDLG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO1, 0x403, 7, 0
+0x6e28, 0x6e6f, 0x2965, "\000" 
+    0
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\PlanMaker.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
